@@ -33,13 +33,10 @@ const PaystackIntegration = () => {
     return (
  <div className='form-container'>
     <div className='form-heading'>
-        <h3 className='w3-center'>Make payment</h3>
+        <h3 className='w3-center'>Make payment with Paystack</h3>
     </div>
 
-            <div className=''></div>
-            <div className=''>
-            <div className=''>
-                    
+       
   <form id="paymentForm" className='form'>  
                         {/* image             */}
   <div class="form-group">
@@ -66,11 +63,9 @@ const PaystackIntegration = () => {
     <button className='btn' type="submit" onclick={payWithPaystack}> Pay </button>
    </div>   
                         
-    </form>
+        </form>
+     
     </div>
-      
-    </div>
-         </div>
     )
 }
 export default PaystackIntegration

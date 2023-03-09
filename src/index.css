@@ -20,5 +20,18 @@ body{
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
-    
+
 }
+.form-group , .form-container{
+
+}
+
+form .form-group{
+    height: 45px;
+    width: 100
+}
+
+input {
+    width: 100%;
+}
+
