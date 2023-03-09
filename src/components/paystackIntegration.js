@@ -31,45 +31,46 @@ const PaystackIntegration = () => {
     }
 
     return (
-        <div className='w3-container w3-row'>
-            <div className='w3-container w3-blue'>
-                <h3 className='w3-center'>Make payment</h3>
-            </div>
+ <div className='form-container'>
+    <div className='form-heading'>
+        <h3 className='w3-center'>Make payment</h3>
+    </div>
 
-            <div className='w3-container w3-quarter'></div>
-            <div className='w3-container w3-half'>
-            <div className='w3-container w3-card-4'>
-        <form id="paymentForm" className=''>      
+            <div className=''></div>
+            <div className=''>
+            <div className=''>
+                    
+  <form id="paymentForm" className='form'>  
+                        {/* image             */}
   <div class="form-group">
     <label for="email">Email Address</label>
-    <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className='w3-input' id="email-address" required />
+    <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className='email' id="email-address" required />
   </div>
                         
   <div class="form-group">
     <label for="amount">Amount</label>
-    <input type="tel" value={amount} onChange={(e)=>setAmount(e.target.value)} className='w3-input' id="amount" required />
+    <input type="tel" value={amount} onChange={(e)=>setAmount(e.target.value)} className='amount' id="amount" required />
   </div>
                         
   <div class="form-group">
     <label for="first-name">First Name</label>
-    <input type="text" value={firstname} onChange={(e)=>setFirstname(e.target.value)} className='w3-input' id="first-name" />
+    <input type="text" value={firstname} onChange={(e)=>setFirstname(e.target.value)} className='firstname' id="first-name" />
    </div>
                         
   <div class="form-group">
     <label for="last-name">Last Name</label>
-    <input type="text" value={lastname} onChange={(e)=>setLastname(e.target.value)} className='w3-input' id="last-name" />
+    <input type="text" value={lastname} onChange={(e)=>setLastname(e.target.value)} className='lastname' id="last-name" />
   </div>
                         
    <div class="form-submit">
-    <button className='w3-btn w3-block w3-blue' type="submit" onclick={payWithPaystack}> Pay </button>
+    <button className='btn' type="submit" onclick={payWithPaystack}> Pay </button>
    </div>   
                         
     </form>
     </div>
-
-            
+      
     </div>
-    </div>
+         </div>
     )
 }
 export default PaystackIntegration
