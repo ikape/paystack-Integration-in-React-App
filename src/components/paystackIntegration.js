@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
-import PaystackPop from '@paystack/inline-js'
+// import PaystackPop from '@paystack/inline-js'
+import { usePaystackPayment } from 'react-paystack';
 
 const PaystackIntegration = () => {
     const [email, setEmail] = useState('')
@@ -9,7 +10,7 @@ const PaystackIntegration = () => {
 
     const payWithPaystack = (e) => {
         e.preventDefault()
-    const paystack = new PaystackPop()
+    const paystack = new  usePaystackPayment()
         paystack.newTransaction({
             key: "pk_test_ee97bfcd2f09ef39708d999978a685e9a0b55a1e",
             amount: amount * 100,
