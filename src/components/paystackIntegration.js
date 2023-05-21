@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-// import PaystackPop from '@paystack/inline-js'
+
 import { usePaystackPayment } from "react-paystack";
 
 const PaystackIntegration = () => {
@@ -15,15 +15,15 @@ const PaystackIntegration = () => {
     publicKey: "pk_test_ee97bfcd2f09ef39708d999978a685e9a0b55a1e"
   };
 
-  // you can call this function anything
+ 
   const onSuccess = (reference) => {
-    // Implementation for whatever you want to do with reference and after success call.
+   
     console.log(reference);
   };
 
-  // you can call this function anything
+
   const onClose = () => {
-    // implementation for  whatever you want to do when the Paystack dialog closed.
+    
     console.log("closed");
   };
 
